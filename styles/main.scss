@@ -1,7 +1,53 @@
-@import "./vendor/normalize";
+
+
 h1 {
 color: purple;
 }
 .heading {
-    color: red;
+    color: purple;
 }
+.container {
+  display: flex-row;
+  display: flex-wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.container {
+    // your grid css here
+    display: grid;
+    grid-template-rows: 50px 100px;
+grid-row-gap:    20px;
+grid-column-gap: 5rem;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body, html{
+    height: 100%;
+  }
+  
+  
+  
+  
