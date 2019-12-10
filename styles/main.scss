@@ -1,52 +1,44 @@
-
-
-h1 {
-color: purple;
-}
-.heading {
-    color: purple;
-}
-.container {
-  display: flex-row;
-  display: flex-wrap;
-  justify-content:center;
-  align-items: center;
+img {
+  width: 100%;
+  height: auto;
 }
 
-
-.container {
-    // your grid css here
-    display: grid;
-    grid-template-rows: 50px 100px;
-grid-row-gap:    20px;
-grid-column-gap: 5rem;
+.jumbotron {
+  background-image: url('../img/zach-vessels-rWxMfj9y0F4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  body, html{
-    height: 100%;
+
+.photos {
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  width: 25%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+
+@media (max-width: 450px) {
+  .photos {
+      flex-wrap: wrap;
   }
+
+  .img-wrapper {
+      width: 80%;
+      margin: 15px auto;
+  }
+}
+  
+  
+  
   
   
   

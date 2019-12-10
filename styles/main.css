@@ -1,32 +1,42 @@
-h1 {
-  color: purple;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.heading {
-  color: purple;
+.jumbotron {
+  background-image: url("../img/zach-vessels-rWxMfj9y0F4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
-.container {
-  display: flex-row;
-  display: flex-wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.photos {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 50px 100px;
-      grid-template-rows: 50px 100px;
-  grid-row-gap: 20px;
-  grid-column-gap: 5rem;
+.img-wrapper {
+  width: 25%;
 }
 
-body, html {
-  height: 100%;
+footer {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .photos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .img-wrapper {
+    width: 80%;
+    margin: 15px auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
