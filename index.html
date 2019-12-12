@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Test Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-    
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Beauty Salon</a>
@@ -28,9 +28,10 @@
     </nav>
 
 
-    <div class="jumbotron pt-2">
+    <div class="jumbotron pt-2 text-center">
         <h1 class="display-4 text-center text-white">Beauty Salon</h1>
         <p class="lead text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas qui vero iure?</p>
+    <button class="btn btn-danger">schedule an appointment</button>
     </div> <!-- .jumbotron -->
 
 
@@ -39,13 +40,13 @@
             <h1 class="text-center mb-4">Hair Styles</h1>
             <div class="row">
                 <div class="col-sm my-2 p-3">    
-                    <img src="img/3PW84p3zknuwAWUsVbwPch-matthew-t-rader-m2MROQIuYxc-unsplash.jpg" />
+                    <img src="images/Blonde Box Braids.jpg" />
                 </div>
                 <div class="col-sm my-2 p-3">    
-                    <img src="img/gJKMfTWy3F3bKs3LedHMjG-alieza-rizvie-eWY3pcaJgwg-unsplash.jpg" />
+                    <img src="images/Brown Box Braids.jpg" />
                 </div>
                 <div class="col-sm my-2 p-3">    
-                    <img src="img/gustavo-spindula-K2D7muBun1A-unsplash.jpg" />
+                    <img src="images/Purple Lacefront.jpg" />
                 </div>
             </div> <!--.rows -->
         </div> <!-- .container -->
@@ -66,5 +67,18 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $(".btn-danger").addClass("btn-bottom");
+        //alert("this page is loaded")
+        $(".btn-danger").click(function(){
+            alert("button was clicked");
+    
+        })
+        setTimeout(function(){
+            alert("5 seconds have passed")
+        },5000)
+    })
+    </script>
 </body>
 </html>
