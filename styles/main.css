@@ -29,15 +29,6 @@ footer {
   color: white;
 }
 
-.btn-bottom{
-  position:relative;
-  top:300px;
-}
-
-
-
-
-
 @media (max-width: 450px) {
   .photos {
     -ms-flex-wrap: wrap;
